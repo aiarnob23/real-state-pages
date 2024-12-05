@@ -328,6 +328,7 @@
   .about-us-container {
   padding: 0 20px;
   margin: 60px auto 60px;
+  width: 375px;
   /* header */
   .header {
     display: flex;
