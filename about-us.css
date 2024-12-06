@@ -5,7 +5,7 @@
   font-family: "Satoshi", sans-serif;
 }
 .about-us-container {
-  margin:0px auto 80px auto;
+  margin: 0px auto 80px auto;
   width: 1280px;
 
   /* Navbar */
@@ -19,7 +19,7 @@
       .logo {
         width: 108px;
         height: 32px;
-        img{
+        img {
           width: 100%;
           height: 100%;
         }
@@ -32,15 +32,15 @@
       gap: 16px;
       font-weight: 400;
 
-      li{
-        a{
+      li {
+        a {
           text-decoration: none;
           color: #70707b;
           font-size: 14px;
           line-height: 22px;
           font-weight: 400;
         }
-        .nav-active{
+        .nav-active {
           text-decoration: none;
           font-size: 14px;
           line-height: 22px;
@@ -50,16 +50,15 @@
       }
     }
 
-
     .contact-btn {
-     text-decoration: none;
-     background-color: #18181b;
-     padding: 10px 18px;
-     border-radius: 12px;
-     color: #FCFCFC;
-     font-size: 16px;
-     font-weight: 500;
-     line-height: 25px;
+      text-decoration: none;
+      background-color: #18181b;
+      padding: 10px 18px;
+      border-radius: 12px;
+      color: #fcfcfc;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
     }
   }
 
@@ -380,54 +379,131 @@
 }
 
 /* Footer */
-.footer{
+.footer {
   background-color: #18181b;
- .footer-body{
-   width: 1280px;
-   margin: auto;
-   padding: 56px 0;
-    .footer-top{
-    .footer-about{
-      width: 620px;
+  .footer-body {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 56px 0;
+    .footer-top {
       display: flex;
-      flex-direction: column;
-      color: wheat;
-      gap: 32px;
-
-      h3{
-        width: 545px;
-        font-size: 32px;
-        line-height: 39px;
-        color: #FCFCFC;
-        font-weight: 400;
-      }
-
-      .footer-about-info{
+      justify-content: space-between;
+      .footer-about {
+        width: 620px;
         display: flex;
-        gap: 24px;
-        .email, .phone, .office{
+        flex-direction: column;
+        color: wheat;
+        gap: 32px;
+
+        h3 {
+          width: 545px;
+          font-size: 32px;
+          line-height: 39px;
+          color: #fcfcfc;
+          font-weight: 400;
+        }
+
+        .footer-about-info {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+          .email,
+          .phone,
+          .office {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            p {
+              color: #ffffff99;
+              font-size: 14px;
+              line-height: 22px;
+              font-weight: 500;
+            }
+
+            h4 {
+              color: #fcfcfc;
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .footer-top-right-div {
+        display: flex;
+        gap: 88px;
+        .navigation-text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #ffffff99;
+        }
+        .navigation-lists {
+          margin-top: 16px;
+          display: flex;
+          gap: 24px;
+          .navigation-lists-left-div,
+          .navigation-lists-right-div {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            a {
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 25px;
+              color: white;
+            }
+          }
+        }
+        .footer-follow-div {
           display: flex;
           flex-direction: column;
-          gap: 12px;
-
-          p{
-            color: #FFFFFF99;
-            font-size: 14px;
-            line-height: 22px;
-            font-weight: 500;
-          }
-
-          h4{
-            color: #FCFCFC;
-            font-size:16px;
-            line-height: 25px;
+          gap: 16px;
+          p {
+            font-size: 16px;
             font-weight: 400;
+            line-height: 25px;
+            color: #ffffff99;
+          }
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            color: white;
           }
         }
       }
     }
+
+    .footer-bottom {
+      margin-top: 80px;
+      padding-top: 38px;
+      border-top: 1px solid #70707b;
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      align-items: center;
+      .rights {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #ffffff99;
+      }
+
+      .fotter-btm-btn {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #fcfcfc;
+      }
+    }
   }
- }
 }
 
 /* ------------responsive design for mobile------------ */
@@ -758,6 +834,141 @@
       }
     }
   }
+
+  /* Footer */
+.footer {
+  background-color: #18181b;
+  .footer-body {
+    width: 335px;
+    margin: 0 auto;
+    padding: 56px 20px;
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      .footer-about {
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        color: wheat;
+        gap: 32px;
+
+        h3 {
+          width: 335px;
+          font-size: 32px;
+          line-height: 39px;
+          color: #fcfcfc;
+          font-weight: 400;
+        }
+
+        .footer-about-info {
+           display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          .email,
+          .phone,
+          .office {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            p {
+              color: #ffffff99;
+              font-size: 14px;
+              line-height: 22px;
+              font-weight: 500;
+            }
+
+            h4 {
+              color: #fcfcfc;
+              font-size: 16px;
+              line-height: 25px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .footer-top-right-div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 24px;
+        .navigation-text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #ffffff99;
+        }
+        .navigation-lists {
+          margin-top: 16px;
+          display: flex;
+          gap: 24px;
+          .navigation-lists-left-div,
+          .navigation-lists-right-div {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            a {
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 25px;
+              color: white;
+            }
+          }
+        }
+        .footer-follow-div {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          p{
+            grid-column: span 4;
+          }
+          gap: 16px;
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            color: #ffffff99;
+          }
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .footer-bottom {
+      margin-top: 80px;
+      padding-top: 38px;
+      border-top: 1px solid #70707b;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      justify-content: center;
+      .rights {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #ffffff99;
+      }
+
+      .fotter-btm-btn {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #fcfcfc;
+      }
+    }
+  }
+}
 }
 
 /* ------------responsive design for tablet------------ */
@@ -1086,5 +1297,3 @@
     }
   }
 }
-
-
