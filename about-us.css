@@ -5,8 +5,64 @@
   font-family: "Satoshi", sans-serif;
 }
 .about-us-container {
-  margin: 80px auto;
+  margin:0px auto 80px auto;
   width: 1280px;
+
+  /* Navbar */
+  .navbar {
+    width: 1280px;
+    display: flex;
+    padding: 26px 0;
+    justify-content: space-between;
+    align-items: center;
+    .Logo {
+      .logo {
+        width: 108px;
+        height: 32px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      font-weight: 400;
+
+      li{
+        a{
+          text-decoration: none;
+          color: #70707b;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 400;
+        }
+        .nav-active{
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: 500;
+          color: #18181b;
+        }
+      }
+    }
+
+
+    .contact-btn {
+     text-decoration: none;
+     background-color: #18181b;
+     padding: 10px 18px;
+     border-radius: 12px;
+     color: #FCFCFC;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 25px;
+    }
+  }
+
   /* header */
   .header {
     display: flex;
@@ -323,247 +379,178 @@
   }
 }
 
-/* ------------responsive design for mobile------------ */
-@media screen and (max-width:576px) {
-  .about-us-container {
-  padding: 0 20px;
-  margin: 60px auto 60px;
-  width: 375px;
-  /* header */
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 24px;
-
-    h2 {
-      font-size: 40px;
-      line-height: 48px;
-      font-weight: 400;
-      width: 314px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 25px;
-      font-weight: 400;
-      width: 335px;
-    }
-  }
-  /* banner */
-  .banner {
-    margin-top: 56px;
-
-    img {
-      width: 335px;
-      height: 335px;
-      border-radius: 12px;
-    }
-  }
-  /* stats */
-  .stats {
-    width: 335px;
-    margin-top: 56px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-
-    .stats-content {
+/* Footer */
+.footer{
+  background-color: #18181b;
+ .footer-body{
+   width: 1280px;
+   margin: auto;
+   padding: 56px 0;
+    .footer-top{
+    .footer-about{
+      width: 620px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 16px;
-      .stat-counts {
-        width: auto;
+      color: wheat;
+      gap: 32px;
 
-        .number {
-          display: inline-flex;
-          align-items: baseline;
-          position: relative;
-          font-size: 40px;
-          line-height: 48px;
-          font-weight: 400;
+      h3{
+        width: 545px;
+        font-size: 32px;
+        line-height: 39px;
+        color: #FCFCFC;
+        font-weight: 400;
+      }
 
-          .sign {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
-            right: -20px;
-            top: 0;
-            position: absolute;
+      .footer-about-info{
+        display: flex;
+        gap: 24px;
+        .email, .phone, .office{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          p{
+            color: #FFFFFF99;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 500;
           }
-          .percentage-sign {
+
+          h4{
+            color: #FCFCFC;
+            font-size:16px;
+            line-height: 25px;
             font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
-            right: -30px;
-            top: 0;
-            position: absolute;
           }
         }
       }
-
-      .stat-text {
-        font-size: 20px;
-        line-height: 31px;
-        font-weight: 500;
-        text-align: center;
-        font-style: italic;
-      }
     }
   }
-  /* pioneering-exellence */
-  .pioneering-exellence {
-    width: 335px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-    margin-top: 56px;
+ }
+}
 
-    .texts {
-      width: 335px;
+/* ------------responsive design for mobile------------ */
+@media screen and (max-width: 576px) {
+  .about-us-container {
+    padding: 0 20px;
+    margin: 60px auto 60px;
+    width: 375px;
+    /* header */
+    .header {
       display: flex;
       flex-direction: column;
+      align-items: start;
       gap: 24px;
 
-      .heading-text {
+      h2 {
+        font-size: 40px;
+        line-height: 48px;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 39px;
+        width: 314px;
       }
-
       p {
-        font-weight: 400;
         font-size: 16px;
         line-height: 25px;
-        color: #70707b;
+        font-weight: 400;
+        width: 335px;
       }
     }
-    .image-div {
-      height: 335px;
-      width: 335px;
+    /* banner */
+    .banner {
+      margin-top: 56px;
+
       img {
-        width: 100%;
-        height: 100%;
+        width: 335px;
+        height: 335px;
         border-radius: 12px;
       }
     }
-  }
-
-  /* trusted by */
-  .trusted-by {
-    width: 335px;
-    margin-top: 160px;
-
-    h3 {
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 39px;
-      color: #18181b;
-      text-align: center;
-      margin-bottom: 48px;
-    }
-    .banks {
-      display: grid;
-      padding: 0 40px;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-
-      .bank-logo{
-        width: 110px;
-
-        img{
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  /* clients review */
-  .clients-review {
-    margin-top: 160px;
-
-    .clients-review-headings {
+    /* stats */
+    .stats {
       width: 335px;
+      margin-top: 56px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 24px;
-      align-items: start;
-      h3 {
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 39px;
-        color: #18181b;
-      }
-      p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        color: #51525c;
-        width: 335px;
-      }
-    }
 
-    .reviews-content {
-      display: flex;
-      flex-direction: column;
-      margin-top: 112px;
-      gap: 56px;
-
-      .review-texts {
-        width: 335px;
+      .stats-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .review-texts-svg {
-          margin-left: 8px;
-          margin-bottom: 38px;
-        }
-        h2 {
-          font-size: 32px;
-          font-weight: 500;
-          line-height: 39px;
-          color: #18181b;
-          margin-bottom: 24px;
-        }
-        .review-description {
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 28px;
-          color: #51525c;
-          margin-bottom: 24px;
-        }
-        .clients-name {
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 25px;
-          color: #18181b;
-          margin-bottom: 24px;
-        }
-        .scrollbars {
-          display: flex;
-          gap: 8px;
-          .scrollbar-active {
-            height: 4px;
-            width: 53px;
-            border-radius: 4px;
-            background-color: #18181b;
+        align-items: center;
+        gap: 16px;
+        .stat-counts {
+          width: auto;
+
+          .number {
+            display: inline-flex;
+            align-items: baseline;
+            position: relative;
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 400;
+
+            .sign {
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 29px;
+              right: -20px;
+              top: 0;
+              position: absolute;
+            }
+            .percentage-sign {
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 29px;
+              right: -30px;
+              top: 0;
+              position: absolute;
+            }
           }
-          .scrollbar-inactive {
-            height: 4px;
-            width: 53px;
-            border-radius: 4px;
-            background-color: #e4e4e7;
-          }
+        }
+
+        .stat-text {
+          font-size: 20px;
+          line-height: 31px;
+          font-weight: 500;
+          text-align: center;
+          font-style: italic;
         }
       }
+    }
+    /* pioneering-exellence */
+    .pioneering-exellence {
+      width: 335px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+      margin-top: 56px;
 
-      .review-image-div {
+      .texts {
         width: 335px;
-        height: 335px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
 
+        .heading-text {
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 39px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          color: #70707b;
+        }
+      }
+      .image-div {
+        height: 335px;
+        width: 335px;
         img {
           width: 100%;
           height: 100%;
@@ -571,414 +558,533 @@
         }
       }
     }
-  }
 
-  /* FAQ */
-  .faq {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-    
-
-    .left-content {
+    /* trusted by */
+    .trusted-by {
       width: 335px;
+      margin-top: 160px;
+
       h3 {
-        font-size: 32px;
         font-weight: 400;
+        font-size: 28px;
         line-height: 39px;
         color: #18181b;
-        margin-bottom: 24px;
+        text-align: center;
+        margin-bottom: 48px;
       }
-      p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        color: #70707b;
-        margin-bottom: 56px;
-      }
-      .faq-iamge-div {
-        display: none;
-      }
-    }
-    .QandA {
-      width: 335px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+      .banks {
+        display: grid;
+        padding: 0 40px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
 
-      .qstn-inactive {
-        padding: 18px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 28px;
-        color: #70707b;
-        display: flex;
-        align-items: center;
-        gap: 12px;
+        .bank-logo {
+          width: 110px;
 
-        .inactive-sign {
-          width: 12px;
-          height: 2px;
-          background-color: #70707b;
-          border-radius: 1.5px;
+          img {
+            width: 100%;
+          }
         }
       }
-      .qstn-active {
-        padding: 18px;
-        .qstn-active-text {
-          margin-bottom: 16px;
-          display: flex;
-          justify-content: space-between;
-          position: relative;
-          p {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 28px;
-            color: #18181b;
-          }
+    }
 
-          .active-sign {
-            position: absolute;
-            right: -4px;
-          }
+    /* clients review */
+    .clients-review {
+      margin-top: 160px;
+
+      .clients-review-headings {
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+        h3 {
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 39px;
+          color: #18181b;
         }
         p {
           font-size: 16px;
+          font-weight: 400;
           line-height: 25px;
-          font-weight: 400;
-          color: #18181b;
-        }
-      }
-    }
-  }
-}
-}
-
-
-
-/* ------------responsive design for tablet------------ */
-@media screen and (min-width:577px) and (max-width:1020px) {
- .about-us-container {
-  margin: 80px auto;
-  width: 728px;
-  /* header */
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 728px;
-
-    h2 {
-      font-size: 40px;
-      line-height: 48px;
-      font-weight: 400;
-      width: 320px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 25px;
-      font-weight: 400;
-      width: 380px;
-      color: #70707b;
-    }
-  }
-  /* banner */
-  .banner {
-    margin-top: 56px;
-
-    img {
-      width: 728px;
-      height: 600px;
-      border-radius: 12px;
-    }
-  }
-  /* stats */
-  .stats {
-    margin-top: 56px;
-    display: flex;
-    width: 728px;
-    justify-content: space-between;
-
-    .stats-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .stat-counts {
-        width: auto;
-
-        .number {
-          display: inline-flex;
-          align-items: baseline;
-          position: relative;
-          font-size: 48px;
-          line-height: 58px;
-          font-weight: 400;
-          color: #18181b;
-
-          .sign {
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 39px;
-            color: #a0a0ab;
-            right: -30px;
-            top: 0;
-            position: absolute;
-          }
-          .percentage-sign {
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 39px;
-            color: #a0a0ab;
-            right: -40px;
-            top: 0;
-            position: absolute;
-          }
+          color: #51525c;
+          width: 335px;
         }
       }
 
-      .stat-text {
-        font-size: 20px;
-        line-height: 31px;
-        font-weight: 500;
-        color: #70707b;
-        text-align: center;
-        font-style: italic;
-      }
-    }
-  }
-  /* pioneering-exellence */
-  .pioneering-exellence {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    margin-top: 56px;
-
-    .texts {
-      width: 728px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-
-      .heading-text {
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 48px;
-        color: #18181b;
-      }
-
-      p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 25px;
-        color: #70707b;
-      }
-    }
-    .image-div {
-      width: 728px;
-      height: 446px;
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 12px;
-      }
-    }
-  }
-
-  /* trusted by */
-  .trusted-by {
-    margin-top: 160px;
-
-    h3 {
-      font-weight: 400;
-      font-size: 32px;
-      line-height: 39px;
-      color: #18181b;
-      text-align: center;
-      margin-bottom: 48px;
-    }
-    .banks {
-      width: 728px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .bank-logo{
-        width: 90px;
-        img{
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  /* clients review */
-  .clients-review {
-    margin-top: 160px;
-
-    .clients-review-headings {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 728px;
-      h3 {
-        width: 200px;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 39px;
-        color: #18181b;
-      }
-      p {
-        width: 370px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 25px;
-        color: #51525c;
-      }
-    }
-
-    .reviews-content {
-      display: flex;
-      margin-top: 112px;
-      justify-content: space-between;
-
-      .review-texts {
-        width: 360px;
+      .reviews-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        .review-texts-svg {
-          margin-left: 8px;
-          margin-bottom: 38px;
+        margin-top: 112px;
+        gap: 56px;
+
+        .review-texts {
+          width: 335px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .review-texts-svg {
+            margin-left: 8px;
+            margin-bottom: 38px;
+          }
+          h2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 39px;
+            color: #18181b;
+            margin-bottom: 24px;
+          }
+          .review-description {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #51525c;
+            margin-bottom: 24px;
+          }
+          .clients-name {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            color: #18181b;
+            margin-bottom: 24px;
+          }
+          .scrollbars {
+            display: flex;
+            gap: 8px;
+            .scrollbar-active {
+              height: 4px;
+              width: 53px;
+              border-radius: 4px;
+              background-color: #18181b;
+            }
+            .scrollbar-inactive {
+              height: 4px;
+              width: 53px;
+              border-radius: 4px;
+              background-color: #e4e4e7;
+            }
+          }
         }
-        h2 {
+
+        .review-image-div {
+          width: 335px;
+          height: 335px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+
+    /* FAQ */
+    .faq {
+      margin-top: 160px;
+      display: flex;
+      flex-direction: column;
+
+      .left-content {
+        width: 335px;
+        h3 {
           font-size: 32px;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 39px;
           color: #18181b;
           margin-bottom: 24px;
         }
-        .review-description {
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #70707b;
+          margin-bottom: 56px;
+        }
+        .faq-iamge-div {
+          display: none;
+        }
+      }
+      .QandA {
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .qstn-inactive {
+          padding: 18px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          color: #70707b;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .inactive-sign {
+            width: 12px;
+            height: 2px;
+            background-color: #70707b;
+            border-radius: 1.5px;
+          }
+        }
+        .qstn-active {
+          padding: 18px;
+          .qstn-active-text {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            p {
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 28px;
+              color: #18181b;
+            }
+
+            .active-sign {
+              position: absolute;
+              right: -4px;
+            }
+          }
+          p {
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 400;
+            color: #18181b;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------responsive design for tablet------------ */
+@media screen and (min-width: 577px) and (max-width: 1020px) {
+  .about-us-container {
+    margin: 80px auto;
+    width: 728px;
+    /* header */
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 728px;
+
+      h2 {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 400;
+        width: 320px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        width: 380px;
+        color: #70707b;
+      }
+    }
+    /* banner */
+    .banner {
+      margin-top: 56px;
+
+      img {
+        width: 728px;
+        height: 600px;
+        border-radius: 12px;
+      }
+    }
+    /* stats */
+    .stats {
+      margin-top: 56px;
+      display: flex;
+      width: 728px;
+      justify-content: space-between;
+
+      .stats-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .stat-counts {
+          width: auto;
+
+          .number {
+            display: inline-flex;
+            align-items: baseline;
+            position: relative;
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 400;
+            color: #18181b;
+
+            .sign {
+              font-weight: 400;
+              font-size: 32px;
+              line-height: 39px;
+              color: #a0a0ab;
+              right: -30px;
+              top: 0;
+              position: absolute;
+            }
+            .percentage-sign {
+              font-weight: 400;
+              font-size: 32px;
+              line-height: 39px;
+              color: #a0a0ab;
+              right: -40px;
+              top: 0;
+              position: absolute;
+            }
+          }
+        }
+
+        .stat-text {
+          font-size: 20px;
+          line-height: 31px;
+          font-weight: 500;
+          color: #70707b;
+          text-align: center;
+          font-style: italic;
+        }
+      }
+    }
+    /* pioneering-exellence */
+    .pioneering-exellence {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+      margin-top: 56px;
+
+      .texts {
+        width: 728px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .heading-text {
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 48px;
+          color: #18181b;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          color: #70707b;
+        }
+      }
+      .image-div {
+        width: 728px;
+        height: 446px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+        }
+      }
+    }
+
+    /* trusted by */
+    .trusted-by {
+      margin-top: 160px;
+
+      h3 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        color: #18181b;
+        text-align: center;
+        margin-bottom: 48px;
+      }
+      .banks {
+        width: 728px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bank-logo {
+          width: 90px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    /* clients review */
+    .clients-review {
+      margin-top: 160px;
+
+      .clients-review-headings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 728px;
+        h3 {
+          width: 200px;
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 39px;
+          color: #18181b;
+        }
+        p {
+          width: 370px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          color: #51525c;
+        }
+      }
+
+      .reviews-content {
+        display: flex;
+        margin-top: 112px;
+        justify-content: space-between;
+
+        .review-texts {
+          width: 360px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .review-texts-svg {
+            margin-left: 8px;
+            margin-bottom: 38px;
+          }
+          h2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 39px;
+            color: #18181b;
+            margin-bottom: 24px;
+          }
+          .review-description {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 31px;
+            color: #51525c;
+            margin-bottom: 24px;
+          }
+          .clients-name {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25px;
+            color: #18181b;
+            margin-bottom: 24px;
+          }
+          .scrollbars {
+            display: flex;
+            gap: 12px;
+            .scrollbar-active {
+              height: 4px;
+              width: 52px;
+              border-radius: 4px;
+              background-color: #18181b;
+            }
+            .scrollbar-inactive {
+              height: 4px;
+              width: 52px;
+              border-radius: 4px;
+              background-color: #e4e4e7;
+            }
+          }
+        }
+
+        .review-image-div {
+          width: 340px;
+          height: 430px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+
+    /* FAQ */
+    .faq {
+      margin-top: 160px;
+      display: flex;
+      flex-direction: column;
+
+      .left-content {
+        width: 532px;
+        h3 {
+          font-size: 52px;
+          font-weight: 500;
+          line-height: 62px;
+          color: #18181b;
+          margin-bottom: 24px;
+        }
+        p {
           font-size: 20px;
           font-weight: 400;
           line-height: 31px;
-          color: #51525c;
-          margin-bottom: 24px;
+          color: #70707b;
+          margin-bottom: 56px;
         }
-        .clients-name {
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 25px;
-          color: #18181b;
-          margin-bottom: 24px;
-        }
-        .scrollbars {
-          display: flex;
-          gap: 12px;
-          .scrollbar-active {
-            height: 4px;
-            width: 52px;
-            border-radius: 4px;
-            background-color: #18181b;
-          }
-          .scrollbar-inactive {
-            height: 4px;
-            width: 52px;
-            border-radius: 4px;
-            background-color: #e4e4e7;
-          }
+        .faq-iamge-div {
+          display: none;
         }
       }
-
-      .review-image-div {
-        width: 340px;
-        height: 430px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          border-radius: 12px;
-        }
-      }
-    }
-  }
-
-  /* FAQ */
-  .faq {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-
-    .left-content {
-      width: 532px;
-      h3 {
-        font-size: 52px;
-        font-weight: 500;
-        line-height: 62px;
-        color: #18181b;
-        margin-bottom: 24px;
-      }
-      p {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 31px;
-        color: #70707b;
-        margin-bottom: 56px;
-      }
-      .faq-iamge-div {
-        display: none;
-      }
-    }
-    .QandA {
-      width: 692px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-
-      .qstn-inactive {
-        padding: 18px;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 28px;
-        color: #70707b;
+      .QandA {
+        width: 692px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 12px;
 
-        .inactive-sign {
-          width: 12px;
-          height: 2px;
-          background-color: #70707b;
-          border-radius: 1.5px;
-        }
-      }
-      .qstn-active {
-        padding: 18px;
-        .qstn-active-text {
-          margin-bottom: 16px;
+        .qstn-inactive {
+          padding: 18px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          color: #70707b;
           display: flex;
           justify-content: space-between;
-          position: relative;
-          p {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 28px;
-            color: #18181b;
-          }
 
-          .active-sign {
-            position: absolute;
-            right: -4px;
+          .inactive-sign {
+            width: 12px;
+            height: 2px;
+            background-color: #70707b;
+            border-radius: 1.5px;
           }
         }
-        p {
-          font-size: 16px;
-          line-height: 25px;
-          font-weight: 400;
-          color: #18181b;
+        .qstn-active {
+          padding: 18px;
+          .qstn-active-text {
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            p {
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 28px;
+              color: #18181b;
+            }
+
+            .active-sign {
+              position: absolute;
+              right: -4px;
+            }
+          }
+          p {
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: 400;
+            color: #18181b;
+          }
         }
       }
     }
   }
 }
-}
+
+
